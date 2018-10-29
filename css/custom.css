@@ -249,6 +249,7 @@ button, .button{
     height: 100%;
     overflow: scroll;
     border-right: 1px solid #272635;
+    overflow: hidden;
     
 }
 
