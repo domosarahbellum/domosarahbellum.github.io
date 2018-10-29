@@ -1,29 +1,4 @@
-body {
-    background-color: #ffffff;
-    background-image: url();
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700|Martel:200,400,700');
-}
-/*@font-face {
-    font-family: ElephantMedium;
-    src: url("/Elephant-Medium.otf") format("opentype"); 
-    src: url("/Elephant-Medium.ttf")  format("truetype");
-}
-*/
-
-
-/*$primary-color:#0A0944;
-$secondary-color: #fc6e6e;
-$primary-background-color: #fffcfa;
-$secondary-background-color: #83dede;
-
-pink: ffe5ee
-red: fc6e6e
-yellow: faef94
-light blue: 50b5de
-dark blue: 0A0944
-green: 194644
-bright blue: 1f54fc
-*/
 
 /* Top Navigation
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -48,7 +23,6 @@ bright blue: 1f54fc
     padding: 13px;
     margin-left: 10px;
     color: #272635;
->>>>>>> gh-pages
 }
 
 .top-nav a:hover {
@@ -551,7 +525,7 @@ form input:required:valid + label, form textarea:required:valid + label, form in
     color: #1f54fc;
 }
 
- form input:invalid, form textarea:invalid, form textarea:invalid + label, form input:invalid + label, form textarea:invalid #submit{ 
+form input:invalid, form textarea:invalid, form textarea:invalid + label, form input:invalid + label, form textarea:invalid #submit{ 
     border-color: #fffdee;
     color: #fffdee;
 }
