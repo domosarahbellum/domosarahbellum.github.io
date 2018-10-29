@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 body {
     background-color: #ffffff;
     background-image: url();
-=======
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700|Martel:200,400,700');
-
+}
 /*@font-face {
     font-family: ElephantMedium;
     src: url("/Elephant-Medium.otf") format("opentype"); 
@@ -553,7 +551,7 @@ form input:required:valid + label, form textarea:required:valid + label, form in
     color: #1f54fc;
 }
 
-form input:invalid, form textarea:invalid, form textarea:invalid + label, form input:invalid + label, form textarea:invalid #submit{ 
+ form input:invalid, form textarea:invalid, form textarea:invalid + label, form input:invalid + label, form textarea:invalid #submit{ 
     border-color: #fffdee;
     color: #fffdee;
 }
