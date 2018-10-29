@@ -265,7 +265,7 @@ button, .button{
     text-align: center;
 }
 
-/*.fade-in{
+.fade-in{
 	opacity: 1;
 	animation-name: fadeInOpacity;
 	animation-iteration-count: 1;
@@ -280,7 +280,7 @@ button, .button{
 	100% {
 		opacity: 1;
 	}
-}*/
+}
 
 .after{
     position: absolute;
