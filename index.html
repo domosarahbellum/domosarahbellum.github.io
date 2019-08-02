@@ -9,170 +9,407 @@
         <meta name="keywords" content="design, graphic designer, charlottesville virginia, brand, illustration " />
         <meta name="author" content="Sarah Beth Martin" />
         <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/skeleton.css">
-        <link rel="stylesheet" href="/css/custom.css">
-        <link rel="shortcut icon" href="/favicon.ico"> 
-        <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/styles.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
     </head> 
     
     <body>
-        
-        
-        <div class="landing">            
-            <div class="container">
-                <h2>Sarah Beth Martin</h2>
-                <h1>Design, Brand, &amp; Illustration</h1>
-   
+        <nav>
+            <div class="grid" id="top">
+                <div class="item"><a href="/index.html">Sarah Beth Martin</a></div>
+                <div class="item"></div>
+                <div class="item"><a href="#work">Work</a> <a href="#bio">Bio</a> <a href="#contact">Contact</a></div>
             </div>
-        </div>
-        
-        <div id="work" class="img-grid">
-                    <div class="row">
-                        <div class="four columns">
-                            <div class="text-block">
-                                <h2>Work</h2>
-                                <p>Ranges from in-house projects, freelance client work, to self-initiated concept projects.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="four columns">
-                                <a href="work/microaire.html">  
-                                    <figure><img src="images/m-brand-thumb.jpg">
-                                        <figcaption><div><h3>MicroAire Identity <i class="fas fa-arrow-right"></i></h3></div></figcaption>
-                                    </figure>
-
-                                </a>
-                        </div>
-                        <div class="four columns">
-                            <a href="/work/lipo-patient.html">
-                                <figure><img src="/images/pal-site-thumb-2.jpg">
-                                    <figcaption><div><h3>Patient Website <i class="fas fa-arrow-right"></i></h3></div></figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        
-            </div>
-            <div class="row">
-                    
-        
-                        <div class="four columns">
-                            <a href="/work/mosaic.html">
-                                <figure><img src="/images/mosaic-brand-thumb-2.jpg">
-                                    <figcaption><div><h3>Mosaic Identity <i class="fas fa-arrow-right"></i></h3></div></figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="four columns">
-                            <a href="/work/charity-campaign.html">
-                                <figure><img src="/images/awareness-campaign-thumb-2.jpg">
-                                    <figcaption><div><h3>Awareness Campaign <i class="fas fa-arrow-right"></i></h3></div></figcaption>
-                                </figure>
-                            </a>
-                        </div>
-                 <div class="four columns">
-                </div>
-    
-                </div>
-        </div>
-        
-
-
-        <div id="about">            
+        </nav>
+        <div class="pink-bg">
             <div class="container">
-                <h2>About</h2>
-
-                <div class="row">
-                    
-                    
+                <div class="block">
+                    <h1 class="top-text">Sarah Beth is a <br><span class="word"></span> <br>designer.</h1>
                 </div>
-                <div class="row">
-                    <div class="five columns"> 
-                        
-                        <h3><span style="background-color: #fffdee;">Print &amp; Digital Design,</span> Brand Communication, Visual Identity Systems, Illustration</h3>
+            </div>
+
+            <div class="grid container" id="work">
+              <div class="item">
+                <div class="item__content">
+                    <a href="/endotine-website.html"> 
+                        <span class="info">Endotine Patient Website</span>
+                        <img src="/images/endotine-landing2-min.gif">
+                    </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__content">
+                    <a href="/microaire-branding.html">
+                        <span class="info">MicroAire Brand Identity</span>
+                        <img src="images/m-brand-thumb.jpg">
+                    </a>
+                </div>
+              </div>
+              
+              <div class="item">
+                <div class="item__content">
+                        <h4 class="info">More is on it's way!</h4>
+                </div>
+              </div>
+              
+              <!--<div class="item">
+                <div class="item__content">
+                    <a href="#">
+                        <span class="info">LBBC Campaign</span>
+                        <img src="images/awareness-campaign-thumb-2.jpg">
+                    </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__content">
+                    <a href="#">
+                        <span class="info">Mosaic Identity</span>
+                        <img src="/images/mosaic-thumb.jpeg">
+                    </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__content">
+                    <a href="#">
+                        <span class="info">Text 5</span>
+                        <img src="https://via.placeholder.com/600x340">
+                    </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__content">
+                    <a href="#">
+                        <span class="info">Text 6</span>
+                        <img src="https://via.placeholder.com/600x600">
+                    </a>
+                </div>
+              </div>-->
+
+            </div>
+
+            <div class="container">
+
+                <div id="modalPic3" class="modalPic3">
+                        <a href="#close3" title="Close" class="close3">✕</a>
+                        <h5 style="margin: 5px;">Hi there!</h5>
+                        <img src="/images/self.jpg">
+                        <p>A face with the name.</p>
+
                     </div>
-                    
-                <div class="seven columns">
-                        
-                    <p>This is a selection of works by Sarah Beth Martin. Currently working in Charlottesville, Virginia. Fascinated by color, typography, composition, patterns and movement. Whether in the digital realm or on a three-dimensional scale, I combine different disciplines and mediums to build engaging experiences.</p>
 
-                    <p>I'm a little obsessed with my three fluffy felines and three not-so-fluffy tortoises. You may also find me painting with watercolors, sewing with felt, gaming, on the tennis court or at the bowling lanes.</p>
-                    
-                    <p>
-                        <a href="http://twitter.com/mssarahbe" target="_blank">Twitter </a>
-                        <br><a href="https://www.linkedin.com/in/sarahbethdesigner/" target="_blank">LinkedIn</a></p>
-                        
-                    <p><a href="#contact-me">For commissioned work and projects, get in touch!</a></p>
+                <div class="block" id="bio"><h2>A Brief Bio</h2>
+                <p>This is a selection of works by <!--<a class="open-4">-->Sarah Beth Martin<!--</a>--> who is currently working in Charlottesville, Virginia. She's fascinated by color, typography, composition, patterns and movement. Whether in the digital realm or on a three-dimensional scale, she combines different disciplines and mediums to build engaging experiences.</p>
+
+                    <div id="modalPic" class="modalPic">
+                        <a href="#close1" title="Close" class="close1">✕</a>
+                        <h5 style="margin: 5px;">Tortoises</h5>
+                        <img src="/images/tortoises.jpg">
+
+                        <p>Willoughby and her baby, Jr.</p>
+
+                    </div>
+
+                <div id="modalPic2" class="modalPic2">
+                        <a href="#close2" title="Close" class="close2">✕</a>
+
+                        <h5 style="margin: 5px;">Fluffy Felines</h5>
+                    <div class="slideshow">
+
+                      <input type="radio" name="slide" id="item-1" checked="checked" />
+                      <div class="slideshow-item">
+
+                        <img src="/images/chibi-cat.jpg" />
+                          <p>Chibi Chibi</p>
+                        <label for="item-3" class="previous">Go to slide 3</label>
+                        <label for="item-2" class="next">Go to slide 2</label>
+                      </div>
+
+                      <input type="radio" name="slide" id="item-2" />
+                      <div class="slideshow-item">
+
+                        <img src="/images/norm-cat.jpg" />
+                          <p>Norm</p>
+                        <label for="item-1" class="previous">Go to slide 1</label>
+                        <label for="item-3" class="next">Go to slide 3</label>
+                      </div>
+
+                      <input type="radio" name="slide" id="item-3" />
+                      <div class="slideshow-item">
+
+                        <img src="/images/belle-cat.jpg" />
+                          <p>Belle</p>
+                        <label for="item-2" class="previous">Go to slide 2</label>
+                        <label for="item-1" class="next">Go to slide 1</label>
+                      </div>
+
+                    </div>
+
 
                 </div>
+
+
+                <p>She's a little obsessed with her three <a class="open-3">fluffy felines</a> and three <a class="open-2">not-so-fluffy tortoises</a>. You may also find her oil painting, illustrating with ink and watercolors, hand-sewing felt projects, playing the video games, on the tennis court or at the bowling alley.</p>
+
+                </div>
+
+
+
+
+                <div class="pop-up" id="popUp">
+                    <a href="#close" title="Close" class="close">✕</a>
+                    <h4>Send her an email!</h4>
+
+                    <div class="tooltip2">
+                         <input type="text" value="designer.sarahbeth@gmail.com" id="myInput" style="display:none;">
+
+                        <!-- The button used to copy the text -->
+                        <p>Sarah Beth's email ⇨ <a style="opacity:1;" onclick="myFunction()"><span class="tooltiptext2" id="myTooltip">☜ Select link to copy</span><span class="link" id="selectable" onclick="selectText('selectable')">designer.sarahbeth@gmail.com</span></a></p>
+                    </div>
+                    <h4>...or send a message here:</h4>
+
+                    <form role="form-inline" method="post" action="https://formspree.io/designer.sarahbeth@gmail.com" class="form">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="line-input form-control" id="name" name="name" placeholder="First &amp; Last Name" value="" required>
+
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="line-input form-control" id="email" name="_replyto" placeholder="your@email.com" value="" required>
+
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="message-lb" for="message">Message</label>
+                                    <textarea class="form-control" rows="5" name="message" placeholder="Hi there..." required></textarea>
+
+
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="">
+                                        <input id="submit" name="submit" type="submit" value="Send It" class="button button-primary submit">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="">
+                                        <!-- <?php echo $result; ?>	-->
+                                    </div>
+                                </div> 
+                                <input type="hidden" name="_next" value="http://www.designersarah.com/thanks.html">
+                            </form>
+                </div>
+
+                <h3><span style="" id="contact">Contact her through the internet:</span></h3>
+
+
+
+                <div class="grid">
+                    <div class="item">
+                        <div class="button button-primary">
+                            <a href="https://twitter.com/mssarahbe" target="_blank">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="button button-primary">
+                            <a href="https://www.linkedin.com/in/sarahbethdesigner/" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="button button-primary">
+                            <a class="open">Email</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
+        
+        <div class="footer">
+
+            <p><a href="/#top">&#8679; Back to Top</a></p>
+            <p class="item">&copy; 2019 This site was designed and developed by Sarah Beth Martin.</p>
+
+        </div>
+        
+        <script>
+            /* Changing Words on Landing Page */
+            var
+              words = ['print','digital','web'],
+              part,
+              i = 0,
+              offset = 0,
+              len = words.length,
+              forwards = true,
+              skip_count = 0,
+              skip_delay = 5,
+              speed = 150;
+
+            var wordflick = function(){
+              setInterval(function(){
+                  if (forwards) {
+                    if(offset >= words[i].length){
+                      ++skip_count;
+                      if (skip_count == skip_delay) {
+                        forwards = false;
+                        skip_count = 0;
+                      }
+                    }
+                  }
+                  else {
+                     if(offset == 0){
+                        forwards = true;
+                        i++;
+                        offset = 0;
+                        if(i >= len){
+                          i=0;
+                        } 
+                     }
+                  }
+                  part = words[i].substr(0, offset);
+                  if (skip_count == 0) {
+                    if (forwards) {
+                      offset++;
+                    }
+                    else {
+                      offset--;
+                    }
+                  }
+                    $('.word').text(part);
+              },speed);
+            };
+
+            $(document).ready(function(){
+              wordflick();
+            });
             
-    </div>
+            /* Modal Contact Popup */
+            $(".open").on("click", function(){
+                $(".pop-up").addClass("active");
+            });
+            $(".close").on("click", function(){
+                $(".pop-up").removeClass("active");
+            });
+            
+            /* Script to copy email link */
+            function myFunction() {
+              var copyText = document.getElementById("myInput");
+              copyText.select();
+              document.execCommand("copy");
+
+              var tooltip = document.getElementById("myTooltip");
+                tooltip.style.color = "#fff";
+                tooltip.style.backgroundColor = "#503bff";
+              tooltip.innerHTML = "✓ Copied";
+
+            }
+            
+            /* Script to select link text for copying email */
+            $('.link').click(function (){
+                var range, selection;
+
+                if (window.getSelection && document.createRange) {
+                    selection = window.getSelection();
+                    range = document.createRange();
+                    range.selectNodeContents($(this)[0]);
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                } else if (document.selection && document.body.createTextRange) {
+                    range = document.body.createTextRange();
+                    range.moveToElementText($(this)[0]);
+                    range.select();
+                }
+            });
+            
+            /* Keeps all error message bubbles from browser from appearing in the FORM*/
+            
+            function replaceValidationUI( form ) {
+            // Suppress the default bubbles
+            form.addEventListener( "invalid", function( event ) {
+                event.preventDefault();
+            }, true );
+
+            // Support Safari, iOS Safari, and the Android browser—each of which do not prevent
+            // form submissions by default
+            form.addEventListener( "submit", function( event ) {
+                if ( !this.checkValidity() ) {
+                    event.preventDefault();
+                }
+            });
+
+            var submitButton = form.querySelector( "button:not([type=button]), input[type=submit]" );
+            submitButton.addEventListener( "click", function( event ) {
+                var invalidFields = form.querySelectorAll( ":invalid" ),
+                    errorMessages = form.querySelectorAll( ".error-message" ),
+                    parent;
+
+                // Remove any existing messages
+                for ( var i = 0; i < errorMessages.length; i++ ) {
+                    errorMessages[ i ].parentNode.removeChild( errorMessages[ i ] );
+                }
+
+                for ( var i = 0; i < invalidFields.length; i++ ) {
+                    parent = invalidFields[ i ].parentNode;
+                    parent.insertAdjacentHTML( "beforeend", "<div class='error-message'>" + 
+                        invalidFields[ i ].validationMessage +
+                        "</div>" );
+                }
+
+                // If there are errors, give focus to the first invalid field
+                if ( invalidFields.length > 0 ) {
+                    invalidFields[ 0 ].focus();
+                }
+            });
+        }
+
+        // Replace the validation UI for all forms
+        var forms = document.querySelectorAll( "form" );
+        for ( var i = 0; i < forms.length; i++ ) {
+            replaceValidationUI( forms[ i ] );
+        }
+        </script>
         
-        <div id="contact-me" class="">
-            <div class="container">
-                <div class="contact row">
-                    <div class="five columns">
-                        <h2>
-                            <span style="background-color: #fffdee; color: #2A2328;">Send me something nice</span>
-                        </h2>
-                    </div>
-                    
-                    <div class="seven columns">
-                        <form role="form" method="post" action="https://formspree.io/designer.sarahbeth@gmail.com">
-                            <div class="form-group row">
-                                <input type="text" class="line-input form-control" id="name" name="name" placeholder="First & Last Name" value="" required/>
-                                <label for="name">Name</label>
 
-                            </div>
-                            <div class="form-group row">
-                                <input type="email" class="line-input form-control" id="email" name="_replyto" placeholder="your@email.com" value="" required />
-                                <label for="email">Email</label>
-
-                            </div>
-                            <div class="form-group row">
-                                <textarea class="form-control" rows="10" name="message" placeholder="Hi there..." required></textarea>
-                                <label class="message-lb" for="message">Message</label>
-
-                            </div>
-
-                            <div class="form-group row">
-                                <div class="twelve columns">
-                                    <input id="submit" name="submit" type="submit" value="Send It" class="button submit">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="twelve columns">
-                                    <!-- <?php echo $result; ?>	-->
-                                </div>
-                            </div> 
-                            <input type="hidden" name="_next" value="http://www.designersarah.com/thanks.html" />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- jQuery Modal and Drag functions -->
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-     
+        <script>
+            
+            $(".open-2").on("click", function(){
+                $(".modalPic").addClass("active");
+            });
+            $(".close1").on("click", function(){
+                $(".modalPic").removeClass("active");
+            });
+            
+            $(".open-3").on("click", function(){
+                $(".modalPic2").addClass("active");
+            });
+            $(".close2").on("click", function(){
+                $(".modalPic2").removeClass("active");
+            });
+            $(".open-4").on("click", function(){
+                $(".modalPic3").addClass("active");
+            });
+            $(".close3").on("click", function(){
+                $(".modalPic3").removeClass("active");
+            });
+            
+            $( function() {
+                $( "#modalPic, #modalPic2, #modalPic3, #popUp" ).draggable();
+            } );
+            
+            
+            
         
-                 <div class="footer">            
-            <div class="social">
-                <ul>
-                    <li>
-                        <a href="http://twitter.com/mssarahbe" target="_blank"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/sarahbethdesigner/" target="_blank"><i class="fab fa-linkedin-in fa-lg" aria-hidden="true"></i></a>
-                    </li>
-                    <!--<li>
-                        <a href="https://medium.com/@domosarahbellum" target="_blank"><i class="fab fa-medium-m fa-lg" aria-hidden="true"></i></a>
-                    </li>-->
-                    <li><small>&copy;2018 This site was designed and coded by Sarah Beth Martin </small></li>
-                </ul>
-            </div>
-        </div>
-
+        </script>
         
+           
+        
+        
+   
     </body>
+    
 </html>
