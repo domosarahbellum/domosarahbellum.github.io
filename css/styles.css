@@ -46,6 +46,8 @@ h1{
 h2{
     font-family: 'Larish Neue', serif;
     font-size: 4em;
+  line-height: 1em;
+  margin-bottom: 20px;
 }
 
 h3{
@@ -97,7 +99,7 @@ a:hover{
 }
 
 .button {
-    border-width: 3px;
+    border-width: 1px;
     border-style: solid;
     font-family: 'hk_groteskregular', 'helvetica', sans-serif;
     text-align: center;
@@ -117,6 +119,8 @@ a:hover{
             -webkit-box-shadow: 8px 8px #000;
         -moz-box-shadow: 8px 8px #000;
     box-shadow: 8px 8px #000;
+    transform: translate(-10px, -10px); 
+
 }
 
 .button-alt{
@@ -144,7 +148,7 @@ a:hover{
 /* Containers */
 .container{
     min-height: 500px;
-    padding: 5% 10% 10% 10%;
+    padding: 5px 10% 10% 10%;
 }
 
 .section{
@@ -176,7 +180,7 @@ a:hover{
 
 /* Top Navigation */
 nav{
-    border-bottom: 3px solid #000;
+    border-bottom: 1px solid #000;
     background-color: #503bff;
     font-size: 1.5em;
     text-align: center;
@@ -207,7 +211,7 @@ nav a{
 .block{
     background-color: #fffeec;
     padding: 2% 5% 5% 5%;
-    border: solid 3px #000;
+    border: solid 1px #000;
 }
 
 
@@ -222,8 +226,12 @@ nav a{
 }
 
 .grid img{
-    border: solid 3px #000;
+    border: solid 1px #000;
     width: 100%;
+}
+
+.grid .item-work img{
+  border: none;
 }
 
 @media screen and (min-width: 400px) {
@@ -246,6 +254,7 @@ nav a{
     .grid-2{
         -webkit-column-count: 1;
             column-count: 1;
+      
     }
 }
 @media screen and (min-width: 1100px) {
@@ -257,6 +266,8 @@ nav a{
     .grid-2{
         -webkit-column-count: 2;
             column-count: 2;
+      -webkit-column-gap: 0;
+          column-gap: 0;
     }
 }
 
@@ -269,61 +280,83 @@ nav a{
     padding: 10px;
     counter-increment: item-counter;
 }
+.item-work{
+  padding: 0;
+}
+
+
+
 
 .item__content a{
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 100%;
+  padding-bottom: 40px;
     font-size: 40px;
     color: #fff;
     box-sizing: border-box;
         -webkit-transition: .3s;
     transition: .3s;
 }
+.item__stagger{
+  margin-top: 20%;
+}
 
 .item__content a:hover{
             -webkit-box-shadow: 8px 8px #000;
         -moz-box-shadow: 8px 8px #000;
     box-shadow: 8px 8px #000;
+  transform: translate(-10px, -10px); 
 }
 
 .item__content a .info {
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-    font-size: .5em;
-    width: 100%;
-    height: 2em;
-    line-height: 2em;
-    text-align: center;
-    background-color: #000;
-        -webkit-transition: .3s opacity ease-in-out;
-	transition: .3s opacity ease-in-out;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  margin-left: -1px;
+  width: 100%;
+  height: 2em;
+  font-size: .5em;
+  line-height: 2em;
+  text-align: center;
+  border: 1px solid #000;
+  border-top: none;
+  background-color: #000;
+  -webkit-transition: .3s opacity ease-in-out;
+	        transition: .3s opacity ease-in-out;
 }
 
 .item__content a:before { 
-    content: ""; 
-    opacity: 0;
-    -webkit-transition: .3s opacity ease-in-out;
-	transition: .3s opacity ease-in-out;
+  content: ""; 
+  opacity: 0;
+  -webkit-transition: .3s opacity ease-in-out;
+	        transition: .3s opacity ease-in-out;
 }
 
 .item__content a:hover:before {
-    content: "Check it out ⇨";
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-    font-size: .5em;
-    width: 100%;
-    height: 2em;
-    line-height: 2em;
-    text-align: center;
-    background-color: #503bff;
-    opacity: 1;
-    z-index: 100;
+  content: "Check it out ⇨";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 2em;
+  font-size: .5em;
+  line-height: 2em;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  background-color: #503bff;
+  opacity: 1;
+}
+
+.paused a:hover:before{
+  content: "Still working... patience is a virtue";
+  background-color: gray;
+
 }
 
 /* Modal Box */
@@ -360,6 +393,16 @@ nav a{
     left: 20px;
 }
 
+#modal4{
+  background-color: #fff68f;
+  right: 100px;
+  width: 100px;
+  top: 200px;
+}
+#modal4 img{
+  border: 1px solid #000;
+}
+
 .modal:active{
     cursor: grabbing;
 }
@@ -374,18 +417,23 @@ nav a{
 .pop-up{
     display: none;
     width: 100%;
-    max-width: 800px;
-    padding: 20px;
+    max-width: 600px;
+    padding: 25px;
     opacity: 0;
     background-color: #fff;
     margin-top: -400px;
     z-index: 9999;
     position: absolute;
-    border: 3px solid #000;
+    border: 1px solid #000;
     margin-left: 10%;
     margin-bottom: 50px;
     box-shadow: 15px 15px #000;
     overflow-y:scroll !important;
+}
+
+
+.pop-up h4:first-child{
+  padding-bottom: 20px;
 }
 
 .modalSlide{
@@ -398,7 +446,7 @@ nav a{
     margin-top: -400px;
     z-index: 9999;
     position: absolute;
-    border: 3px solid #000;
+    border: 1px solid #000;
     margin-bottom: 50px;
     box-shadow: 15px 15px #000;
     overflow-y:scroll;
@@ -443,24 +491,38 @@ nav a{
 }
 
 .modalPic, .modalPic2, .modalPic3{
-    display: none;
-    font-size: .75em;
-    width: 300px;
-    padding: 10px;
-    position: absolute;
-    color: #000;
-    cursor: grab;
-    box-shadow: 8px 8px #000;
+  display: block;
+  font-size: .75em;
+  width: 300px;
+  padding: 10px;
+  position: absolute;
+  color: #000;
+  cursor: grab;
+  z-index: 1;
 }
 
 #modalPic{
     background-color: #fff;
-    left: 60%;
+    right: 5%;
+    box-shadow: 8px 8px #000;
 }
 
-#modalPic2, #modalPic3{
-    background-color: #fff;
-    left: 40%;
+#modalPic2{
+    background-color: #f900fb;
+    right: 25%;
+    box-shadow: 8px 8px #000;
+}
+#modalPic3{
+  background-color: #fff;
+  right: 5%;
+  width: 400px;
+  margin-top: 200px;
+  box-shadow: 8px 8px #000;
+}
+.modalPic-alt{
+  background-color: #fff68f !important;
+  margin-top: -100px;
+  right: 10% !important;
 }
 
 #modalPic2 p, #modalPic p{
@@ -484,6 +546,10 @@ nav a{
     
 }
 
+.not-active{
+  display: none;
+}
+
 /* Form */
 form{
     width: 100%;
@@ -500,10 +566,10 @@ form{
 .form-control {
     display: block;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 30px;
+    padding: 5px;
+    margin-bottom: 15px;
     line-height: 2em;
-    border-width: 3px;
+    border-width: 1px;
     color: #000 !important;
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
@@ -545,7 +611,7 @@ fieldset[disabled] .form-control {
 
 .form-control:active, .form-control:focus, form input:focus{
     outline: none !important;
-    border: 3px solid #f5c7f7;
+    border: 1px solid #f5c7f7;
     box-shadow: 8px 8px #000;
 }
 
@@ -557,7 +623,7 @@ fieldset[disabled] .form-control {
 
 form textarea{
     margin-top: 5px;
-    border-width: 3px;
+    border-width: 1px;
 }
 
 
@@ -601,20 +667,21 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
 }
 
 .tooltip2 .tooltiptext2 {
-    visibility: hidden;
-    background-color: #fffeec;
-    color: #000;
-    text-align: center;
-    font-size: .75em;
-    padding: 10px;
-    position: absolute;
-    z-index: 1;
-    bottom: 20%;
-    left: 100%;
-    margin-left: 10px;
-    width: 200px;
-    opacity: 0;
-    transition: opacity 0.3s;
+  visibility: hidden;
+  background-color: #fffeec;
+  color: #000;
+  text-align: center;
+  font-size: .75em;
+  padding: 10px;
+  position: absolute;
+  z-index: 1;
+  top: -80%;
+  left: 50%;
+  width: 150px;
+  margin-left: 10px;
+  border: 1px solid #000;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .tooltip2:hover .tooltiptext2 {
@@ -629,7 +696,7 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
 /* Work Page Styles */
 
 .gif-img{
-    border: 0px;
+    border: 0;
     background-color: #fff;
     width: 100%;
     padding: 0;
@@ -696,8 +763,7 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
 }
 
 .square{
-    min-height: 200px;
-    height: 100%;
+    height: 225px;
      transition: ease-in-out 0.3s;
 }
 
@@ -705,6 +771,7 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
     box-shadow: 8px 8px #000;
     opacity: 1;
     cursor: pointer;
+  
 }
 .square-text{
     text-align: center;
@@ -712,7 +779,7 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
     font-family: 'Larish Neue', serif;
     opacity: 0;
     width: 100%;
-    height: 100%;
+    height: 100% !important;
     transition: ease-in-out 0.3s;
     padding-top: 15%;
 }
@@ -819,8 +886,8 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
     width: 100%;
 }
 
-.grid-2 img{
-    border: 3px solid #000;
+#bio .grid-2 img{
+    border: 1px solid #000;
 }
 
 .section-wide img, .section-exwide img{
@@ -833,6 +900,10 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
     margin-bottom: 20px;
 }
 
+.img-border{
+  border: solid 1px #000;
+}
+
 /*Slideshow styles */
 
 .slideshow {
@@ -842,6 +913,29 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
 	text-align: center;
 	padding-bottom: 60px;
     top: 0;
+}
+
+.slideshow-bg{
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+  width: 100%;
+  -webkit-box-shadow: 8px 8px #000;
+     -moz-box-shadow: 8px 8px #000;
+          box-shadow: 8px 8px #000;
+  padding: 0 10px 10px 10px;
+  margin-left: -10px;
+}
+.triangle{
+  width: 0;
+  height: 0;
+  display: block;
+  border-style: solid;
+  border-width: 0 16px 16px 16px;
+  border-color: transparent transparent #fff;
+  margin-top: -15px;
+  position:absolute;
+  left: 45%;
 }
 
 .slideshow input[type="radio"] {
@@ -888,17 +982,17 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
 	top: 0;
 	bottom: 0;
 	width: 50%;
-    height: 100%;
+  height: 100%;
 	display: none;
 	cursor: pointer;
-    z-index: 1;
+  z-index: 1;
 	color: transparent;
 	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	  -webkit-user-select: none;
+	   -khtml-user-select: none;
+	     -moz-user-select: none;
+	      -ms-user-select: none;
+	          user-select: none;
 }
 
 .slideshow .slideshow-item label:after {
@@ -935,16 +1029,17 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
 	opacity: 1;
 }
 
-
+.section{
+  padding: 10% 0;
+}
 
 /* Footer Styles */
 .footer{
     bottom: 0;
-    border-top: 3px solid #000;
     text-align: center;
-    background-color: #fff;
+    background-color: #f5c7f7;
     margin-bottom: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     
 }
