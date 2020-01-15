@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sarah Beth Martin, Designer</title>
+        <meta name="description" content="Designer" />
+        <meta name="keywords" content="design, graphic designer, charlottesville virginia, brand, illustration " />
+        <meta name="author" content="Sarah Beth Martin" />
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    </head> 
+    
+    <body id="light-bg">
+        <nav>
+            <div class="grid" id="top">
+                <div class="item"><a href="/index.html">Sarah Beth Martin</a></div>
+                <div class="item"></div>
+                <div class="item"><a href="/index.html#work">Work</a> <a href="/index.html#bio">Bio</a> <a href="/index.html#contact">Contact</a></div>
+            </div>
+        </nav>
+        
+        <div class="purple-bg">
+            
+            <a href="/index.html#work" class="button-left button-work">Back &#8679;</a>
+            <a href="/microaire-branding.html" class="button-right button-work">&#8679; Next</a>
+
+            <div class="container">
+              <h2 style="text-align:center;">Tuesday Design Society <span style="letter-spacing: -7px;">W</span>ebsite</h2>
+             <img style="width: 100%;" src="/images/tds-landing.png" alt="Tuesday Design Society screenshot of landing page">
+               
+            </div>
+
+            <div class="container">
+
+
+                <div class="block block-work grid-2">
+                    
+
+                    <div class="item">
+                      
+                      <h4>About</h4>
+                      <p>Tuesday Design Society (TDS) is a non-profit organization that brings the design community together every Tuesday and hosts an annual design festival in Charlottesville, Virginia.</p>
+                      
+                      <h4>Challenges</h4>
+                      <p>Create simple website as a point of contact and to inform current and potential members on what TDS does and its events.</p>
+                      <p>The site should be indicative of the diversity of TDS's members and its laid-back, easy-going, and interesting nature.
+                      
+                    </div>
+                    <div class="item">
+                        <h4>Client</h4>
+                            <p>Tuesday Design Society</p>
+                            
+                        <h4>Team</h4>
+                            <ul>
+                                <li>Sarah Beth Martin: Design, Development</li> 
+                            </ul>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container">
+                <div class="grid-2 section-wide">
+                    <video class="item img-border" autoplay muted loop id="myVideo" style="padding: 0;">
+                    <source src="videos/tds-site-full-animation-2.m4v" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                  </video>
+                  
+                    <div class="item" style="padding: 5%;"><h3>Go and experience the site for yourself. </h3>
+                        <div class="button button-alt">
+                            <a href="https://www.tuesdaydesignsociety.org" target="_blank">Visit Site ⇨</a>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+
+
+
+
+                 <div class="section" style="margin-top: 10%;">
+                   <h2>Color Pallet</h2>
+                   <p>Off-white softens the background against black text. A pastel gradient follows along the page and is used as a secondary color pallet that indicates each section. </p>
+                   <div class="grid-2">
+                     <div class="item">
+                      <div class="square" style="background-color: #000;">
+                        <p class="square-text" style="color: #fff;">#000000</p>
+                       </div>
+                     </div>
+                     <div class="item">
+                      <div class="square" style="background-color: #FFF7EB;">
+                        <p class="square-text">#fff7eb</p>
+                       </div>
+                     </div>
+                   </div>
+                   <div class="square" id="tds-gradient">
+                     <p class="square-text" style="padding-top: 75px">#fff7eb, #fac0e1, #caa5f1, #00c6e5, #0622d6</p>
+                   </div> 
+
+                                     
+                     </div>
+
+                <div class="section container">
+                    <h2>Typography</h2>
+
+                    <p>Influenced from landmark sans serifs of the 20th century, Synthese imbues a basic, almost blatant solidity and strength, but is tempered by gentle curves and subtle detail. </p>
+
+                    <div class="grid-2">
+                        <div class="item">
+                          <img class="img-fill" src="/images/synthese-specimen.png" alt="type specimen for synthese font family">
+                        </div>
+                      <div class="item">
+                          <img class="img-fill" src="/images/synthese-g.png" alt="lowercase g in synthese typeface">
+                        </div>
+                    </div>
+                </div>
+
+               
+                     <img class="phone-gif" src="/videos/tds-site-mobile.gif" alt="TDS website scrolling on mobile device">
+
+                    <img style="width:100%" class="" src="/images/tds-full-page.png">
+  
+      
+            </div>
+            
+        </div>
+        
+        <div class="footer">
+            
+            <p><a href="#top">&#8679; Head on back up there</a></p>
+            <p class="item">&copy; 2020 This site was designed and developed by Sarah Beth Martin.</p>
+
+        </div>
+        
+        <script>
+            // Make the DIV element draggable:
+            dragElement(document.getElementById("modal"));
+            dragElement(document.getElementById("modal2"));
+            dragElement(document.getElementById("modal3"));
+          dragElement(document.getElementById("modal4"));
+
+            function dragElement(elmnt) {
+              var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+              if (document.getElementById(elmnt.id + "modal")) {
+                document.getElementById(elmnt.id + "modal").onmousedown = dragMouseDown;
+              } 
+                if (document.getElementById(elmnt.id + "modal2")) {
+                document.getElementById(elmnt.id + "modal2").onmousedown = dragMouseDown;
+              }
+                if (document.getElementById(elmnt.id + "modal3")) {
+                document.getElementById(elmnt.id + "modal3").onmousedown = dragMouseDown;
+              }
+              if (document.getElementById(elmnt.id + "modal4")) {
+                document.getElementById(elmnt.id + "modal4").onmousedown = dragMouseDown;
+              }
+                else {
+                elmnt.onmousedown = dragMouseDown;
+              }
+               
+
+              function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+              }
+
+              function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+              }
+
+              function closeDragElement() {
+                // stop moving when mouse button is released:
+                document.onmouseup = null;
+                document.onmousemove = null;
+              }
+            }   
+            
+        
+        </script>
+        
+        <script>
+            
+            $(".open-1").on("click", function(){
+                $(".modalSlide").addClass("active");
+            });
+            $(".close4").on("click", function(){
+                $(".modalSlide").removeClass("active");
+            });
+            
+            
+            $( function() {
+                $( "#modalSlide" ).draggable();
+            } );
+            
+            
+            
+        
+        </script>
+        
+    </body>
+    
+</html>

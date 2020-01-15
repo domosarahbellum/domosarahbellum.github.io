@@ -12,13 +12,14 @@
         <link rel="stylesheet" href="/css/styles.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="/js/jquery.ui.touch-punch.min.js"></script>
 
     </head> 
     
     <body>
         <nav>
             <div class="grid" id="top">
-                <div class="item"><a href="/index.html">Sarah Beth Martin</a></div>
+                <div class="item name"><a href="/index.html">Sarah Beth Martin</a></div>
                 <div class="item"></div>
                 <div class="item"><a href="#work">Work</a> <a href="#bio">Bio</a> <a href="#contact">Contact</a></div>
             </div>
@@ -32,10 +33,13 @@
 
             <div class="grid container" id="work">
               <div class="item">
-                <div class="item__content paused">
-                    <a href="/">
-                        <span class="info" style="background-color: #624f62;">Tuesday Design Society Website</span>
-                        <img src="images/tds-x-min.gif">
+                <div class="item__content">
+                    <a href="/tds-website.html">
+                        <span class="info">Tuesday Design Society Website</span>
+                        <video autoplay muted loop id="myVideo">
+                  <source src="images/tds-thumb.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
                     </a>
                 </div>
               </div>
@@ -59,18 +63,21 @@
         
              
               <div class="item">
-                <div class="item__content paused">
-                    <a href="/">
-                        <span class="info" style="background-color: #624f62;">Coming Soon</span>
-                        <img src="https://via.placeholder.com/600x340/ab8bac/000000?text=Still+working+on+this+one">
+                <div class="item__content">
+                    <a href="/cdw2019.html">
+                        <span class="info">Cville Design Week 2019</span>
+                        <video autoplay muted loop id="myVideo">
+                  <source src="images/cdw-thumb.mp4" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
                     </a>
                 </div>
               </div>
               <div class="item">
                 <div class="item__content paused">
-                    <a href="/">
-                        <span class="info"  style="background-color: #624f62;">Coming Soon</span>
-                        <img src="https://via.placeholder.com/600x600/ab8bac/000000?text=Still+working+on+this+one">
+                    <a href="">
+                        <span class="info" style="background-color: #624f62;">Carpal/Cubital Patient Website</span>
+                        <img src="images/carpal-cubital-thumb.jpg">
                     </a>
                 </div>
               </div>
@@ -143,7 +150,7 @@
                         
                       </div>
                     </div>
-                    <div style="font-size: .7em; width: 60%; float: right; transform: rotate(45deg); margin-top: 200px;">
+                    <div class="buried-text">
                       <p style=" font-weight: 600;">You uncovered incredibly rare <strong>whitespace</strong>.</p><p>Believed to be on the verge of extinction, whitespace is known to be replaced with useless nonsense, unrelated content, clutter, and rambling. Oh no, it happened again. </p>
                     </div>
                   </div>
@@ -199,7 +206,7 @@
                             </form>
                 </div>
 
-                <div class="section">
+                <div class="section contact">
                   <h3><span style="" id="contact">Contact her through the internet:</span></h3>
 
 
@@ -229,7 +236,7 @@
         <div class="footer">
 
             <p><a href="/#top">&#8679; Head on back up there</a></p>
-            <p class="item">&copy; 2019 This site was designed and developed by Sarah Beth Martin.</p>
+            <p class="item">&copy; 2020 This site was designed and developed by Sarah Beth Martin.</p>
 
         </div>
         
