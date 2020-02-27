@@ -264,8 +264,11 @@ nav a:hover {
 }
 
 .grid img {
-  border: solid 1px #000;
   width: 100%;
+}
+
+#work video, #work img{
+  border: solid 1px #000;
 }
 
 .grid .item-work img {
@@ -441,7 +444,7 @@ nav a:hover {
 
 .modal:active {cursor: grabbing;}
 
-.modal .close, .close1, .close2, .close3, .close4 {
+.modal .close, .close1, .close2, .close3, .close4, .pop-up .close {
   font-size: 2em;
   float: right;
   text-decoration: none;
@@ -919,7 +922,6 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
   bottom: 0;
   min-width: 100%; 
   min-height: 100%;
-  border: 1px solid #000;
 }
 
 .gif-img {
@@ -937,7 +939,7 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
 }
 
 @media screen and (max-width: 600px) {
-  .phone-gif{
+  .phone-gif {
     position: relative;
     width: 80%;
     right: inherit;
