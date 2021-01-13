@@ -970,6 +970,13 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
   right: 5%;
 }
 
+.work-landing-img {
+  width: 85%;
+  margin: 0 auto; 
+  display: block;
+  padding: 50px 0;
+}
+
 @media screen and (max-width: 600px) {
   .phone-gif {
     position: relative;
