@@ -538,7 +538,8 @@ nav a:hover {
 }
 
 .modalSlide {
-  width: 800px;
+  width: 80%;
+   max-width: 800px;
   height: 500px;
   display: none;
   padding: 20px;
@@ -552,14 +553,22 @@ nav a:hover {
   box-shadow: 15px 15px #000;
   overflow-y:scroll;
 }
+.modalSlide .slideshow .slideshow-item label {
+  position: relative;
+  z-index: 9999;
+  width: auto !important;
+}
 
 .modalSlide .slideshow {
-  width: 800px;
-  height: 500px;
+  width: 100%;
+}
+.modalSlide .slideshow .item-nav {
+  width: 100%;
+  position: absolute;
+  top: 25px;
 }
 .modalSlide .slideshow-item {
-  width: 800px;
-  height: 500px;
+  width: 100%;
 }
 
 .modalSlide input[type="radio"] {
@@ -569,14 +578,33 @@ nav a:hover {
 }
 
 .modalSlide label {
-  height: 80%;
-  top: 5% !important;
+  height: 100%;
+
 }
 
-.modalSlide .slideshow-item label:after {
-  bottom: auto;
-  top: 0;
+
+.modalSlide .slideshow .slideshow-item label.next {
+  position: absolute;
+  right: 0;
+  left: auto;
 }
+.modalSlide .slideshow .slideshow-item label.previous {
+  position: absolute;
+  right: auto;
+  left: 0;
+}
+
+
+
+.modalSlide .slideshow .slideshow-item label:after {
+bottom: inherit;
+  margin: 0;
+}
+
+
+
+
+
 
 #modalSlide:hover {cursor: grab;}
 #modalSlide:active {cursor: grabbing;}
@@ -645,13 +673,17 @@ nav a:hover {
 .slideshow p {padding-top: 10px;}
 
 .slideshow .slideshow-item {
-	width: 300px;
-	height: 300px;
+
 	line-height: 1.5;
 	position: absolute;
-	top: 0;
 	opacity: 0;
 	transition: .3s ease-out opacity;
+}
+
+#modalPic2 .slideshow .slideshow-item {
+  top: 0;
+	width: 300px;
+	height: 300px;
 }
 
 .slideshow .slideshow-item label {
@@ -683,6 +715,9 @@ nav a:hover {
 	margin-top: -.5em;
 }
 
+.modalSlide .slideshow .slideshow-item label.previous:hover, .modalSlide .slideshow .slideshow-item label.next:hover {
+  color: #ccc;;
+}
 
 .slideshow .slideshow-item label.previous {
 	left: 0;
@@ -704,8 +739,11 @@ nav a:hover {
 
 .slideshow input[type="radio"]:checked + .slideshow-item {opacity: 1;}
 
+.slideshow input[type="radio"]:hover {cursor: pointer; background: #aaa;}
+
 @media screen and (max-width: 600px) {
   .slideshow-item {width: 100%;}
+  
   
   .modalSlide {
     width: 90%;
@@ -713,6 +751,14 @@ nav a:hover {
   }
   
   .modalHeader {padding: 10px;}
+  .modalSlide .slideshow {
+    width: 100% !important;
+  }
+  
+  .modalSlide .slideshow input[type="radio"] {
+    left: auto;
+    right: auto;
+  }
   
   .slideshow {width: 50% !important;}
   
@@ -979,6 +1025,8 @@ form input:invalid, form textarea:invalid, form textarea:invalid + label, form i
   position: absolute;
   margin-top: 10%;
   right: 5%;
+  min-width: 200px;
+  max-width: 300px;
 }
 
 .work-landing-img {
