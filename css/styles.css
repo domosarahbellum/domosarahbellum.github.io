@@ -204,6 +204,10 @@ button {width: 100%;}
 
 .section h1, .section h2, .section h3 {text-align: center;}
 
+#campaign-page h3 {
+  margin-bottom: 0;
+}
+
 .section .grid-2 h3, .section .grid-2 h2 {
   text-align: left;
   margin-top: 0;
