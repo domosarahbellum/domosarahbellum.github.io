@@ -462,6 +462,22 @@ nav a:hover {
 }
 
 /* Modal Box */
+
+.modal .button, .modal .button .button-download{
+  height: 100%;
+  font-size: 1em;
+  margin-top: 30px;
+}
+
+.modal .button .base-icon{
+  width: 25px;
+  display: block;
+  float: right;
+  padding: 10px;
+  border: 0 !important;
+}
+
+
 .modal {
   font-size: .75em;
   width: 200px;
