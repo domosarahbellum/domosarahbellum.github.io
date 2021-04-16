@@ -111,7 +111,14 @@ a:hover {
 }
 
 
+.top span {
+  transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);	 /*  for IE  */
 
+    /* 	for browsers supporting webkit (such as chrome, firefox, safari etc.). */
+    -webkit-transform: rotate(-90deg);
+    display: inline-block;
+}
 
 button {width: 100%;}
 
@@ -137,6 +144,14 @@ button {width: 100%;}
   transform: translate(-10px, -10px); 
   color: #fff;
 }
+
+.button:active {
+   -webkit-box-shadow: 2px 2px #000;
+     -moz-box-shadow: 2px 2px #000;
+          box-shadow: 2px 2px #000;
+  transform: translate(-2px, -2px);
+}
+
 
 .button-alt {
   border-color: #503bff;
@@ -328,9 +343,7 @@ nav a:hover {
   width: 100%;
 }
 
-#work video, #work img{
-  border: solid 1px #000;
-}
+
 
 .grid .item-work img {
   border: none;
@@ -388,6 +401,7 @@ nav a:hover {
 .item-work {padding: 0;}
 
 .item__content a {
+  border: 1px solid #000;
   position: relative;
   display: flex;
   flex-direction: row;
@@ -413,15 +427,12 @@ nav a:hover {
 
 .item__content a .info {
   position: absolute;
-  bottom: 1px;
+  bottom: 0;
   left: 0;
-  margin-left: -1px;
   width: 100%;
   font-size: .5em;
   line-height: 2em;
   text-align: center;
-  border: 1px solid #000;
-  border-top: none;
   background-color: #000;
   -webkit-transition: .3s opacity ease-in-out;
 	        transition: .3s opacity ease-in-out;
@@ -435,7 +446,7 @@ nav a:hover {
 }
 
 .item__content a:hover:before {
-  content: "Check it out ⇨";
+  content: "Check it out ➔";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -452,6 +463,18 @@ nav a:hover {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
           filter: grayscale(100%);
 }
+.paused a:hover {
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.paused a:hover img {
+  opacity: .5;
+  -webkit-transition: .3s opacity ease-in-out;
+          transition: .3s opacity ease-in-out;
+}
+
 .paused a:hover:before {
   content: "Still working... patience is a virtue";
   background-color: gray;
@@ -463,17 +486,20 @@ nav a:hover {
 
 /* Modal Box */
 
-.modal .button, .modal .button .button-download{
-  height: 100%;
-  font-size: 1em;
-  margin-top: 30px;
+
+.modal .button-download a {
+  text-decoration: none;
+    font-size: 1em;
+  width: 100%;
+
 }
 
-.modal .button .base-icon{
-  width: 25px;
-  display: block;
+.modal .button-download .base-icon {
+  width: 1em;
+  display: inline-block;
   float: right;
   padding: 10px;
+  fill: #ffffff;
   border: 0 !important;
 }
 
@@ -551,8 +577,16 @@ nav a:hover {
 
 @media screen and (max-width: 600px) {
   .modal {
-    position: relative;
+    position: relative !important;
     margin: 20px;
+    left: inherit !important;
+    right: inherit !important;
+    top: inherit !important;
+    float: none !important;
+  }
+  
+  .modal .button-download a {
+    line-height: 2.5em;
   }
   
   #modal4 {
