@@ -66,7 +66,7 @@
   
                
               <div id="modal" class="modal" style="top: 50%;">
-                  <a href="#close" title="Close" class="close" onclick="document.getElementById('modal4').style.display='none'">✕</a>
+                  <a href="#close" title="Close" class="close" onclick="document.getElementById('modal').style.display='none'">✕</a>
                   <p>MicroAire's campaign material for Breast Cancer Awareness Month. </p>
               </div>
             </div>
@@ -257,7 +257,7 @@
         </div>
         
       </div>
-        <script>
+       <!-- <script>
             // Make the DIV element draggable:
             dragElement(document.getElementById("modal"));
             dragElement(document.getElementById("modal2"));
@@ -315,7 +315,7 @@
             }   
             
         
-        </script>
+        </script> -->
         
         <script>
             
@@ -327,8 +327,8 @@
             });
             
             
-            $( function() {
-                $( "#modalSlide" ).draggable();
+             $( function() {
+                $( "#modalSlide, #modal2, #modal4, #modal3, #modal" ).draggable();
             } );
             
             

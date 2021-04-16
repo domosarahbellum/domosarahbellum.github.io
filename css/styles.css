@@ -614,7 +614,7 @@ nav .name a {
   }
   
   .pop-up {
-    margin: 0;
+    margin-top: -700px;
     width: 80%;
     padding: 10px;
   }

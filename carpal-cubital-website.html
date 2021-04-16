@@ -222,8 +222,8 @@
 
         </div>
         
-        <script>
-            // Make the DIV element draggable:
+        <!-- <script>
+           // Make the DIV element draggable:
             dragElement(document.getElementById("modal"));
             dragElement(document.getElementById("modal2"));
             dragElement(document.getElementById("modal3"));
@@ -278,9 +278,9 @@
                 document.onmousemove = null;
               }
             }   
-            
+           
         
-        </script>
+        </script> -->
         
         <script>
             
@@ -293,8 +293,10 @@
             
             
             $( function() {
-                $( "#modalSlide" ).draggable();
+                $( "#modalSlide, #modal2, #modal4, #modal3, #modal" ).draggable();
             } );
+          
+      
             
             
             
