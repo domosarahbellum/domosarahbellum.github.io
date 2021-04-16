@@ -14,17 +14,28 @@
        url('../fonts/hkgrotesk-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-}
+} 
+
+@font-face {
+  font-family: 'hk_groteskregular';
+  src: url('../fonts/hkgrotesk-bold-webfont.woff2') format('woff2'),
+       url('../fonts/hkgrotesk-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+} 
+
 
 /*========= General CSS =========*/
 
 /* Body Text and Headings */
 body {
-  font-family: 'hk_groteskregular', sans-serif;
+  font-family:  'p22-underground', 'hk_groteskregular', sans-serif;
+  background-color: #fbe9fc;
 }
 
 strong {
   text-decoration: underline;
+  font-weight: bold;
 }
 
 p, ul, ol {
@@ -87,7 +98,7 @@ h5 {
 
 .pink-bg {background-color: #f5c7f7;}
 
-.light-bg {background-color: #fefafa;}
+.light-bg {background-color: #fbe9fc;}
 
 
 /* Links and Buttons */
@@ -187,7 +198,7 @@ button {width: 100%;}
 
 /* Containers */
 .container {
-  min-height: 500px;
+  min-height: 400px;
   padding: 5px 10% 10% 10%;
 }
 .container-wrapper {
@@ -249,32 +260,37 @@ nav {
 }
 
 nav a {
-  color: #fffeec;
+  color: #fbe9fc;
   text-decoration: none;
   padding-right: 5%;
   transition: .2s ease-in-out;
+  display:inline-block
 }
 
+
 nav a:hover {
-  text-shadow: 3px 3px #000;
-  transform: translate(-10px, -10px);
+  text-shadow: 3px 3px #1400cc;
+  transform: translate(-3px, -3px);
   color: #fff;
+}
+
+
+nav .name a {
+  font-weight: bold;
 }
 
 @media screen and (max-width: 600px) {
   nav .item {
     padding: 3px;
   } 
-  nav .name a {
-    font-style: oblique;
-  }
+
 }
 
 /*========= Landing Word Change Animation =========*/
 .word {
   background-color: #000 !important;
   padding: 5px;
-  color: #fffeec;
+  color: #fbe9fc;
 }
 
 .top-text {
@@ -283,7 +299,7 @@ nav a:hover {
 }
 
 .block {
-  background-color: #fffeec;
+  background-color: #fbe9fc;
   padding: 2% 5% 5% 5%;
   border: solid 1px #000;
   max-width: 900px;
@@ -574,6 +590,10 @@ nav a:hover {
   overflow-y:scroll !important;
 }
 
+.pop-up .pop-up-wrap {
+    text-align: center;
+}
+
 @media screen and (max-width: 600px) {
   .modal {
     position: relative !important;
@@ -693,7 +713,7 @@ bottom: inherit;
 }
 
 .slideshow-bg {
-  background-color: #fff;
+  background-color: #fbe9fc;
   color: #000;
   text-align: left;
   width: 100%;
