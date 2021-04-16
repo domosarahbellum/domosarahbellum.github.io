@@ -169,10 +169,11 @@ button {width: 100%;}
   color: #503bff;
 }
 .button-alt:hover {
-  background-color: #fbe8e7;
+  background-color: #fff;
   border-color: #3829b2;
   color: #3829b2;
 }
+
 
 .button-inverse {border-color: #fbe8e7;}
 .button-inverse a {
@@ -188,6 +189,14 @@ button {width: 100%;}
 }
 .button-primary a {color: #fbe8e7;}
 .button-primary:hover {background-color: #7262ff;}
+
+.button svg path {
+  transition: ease-in-out .3s;
+}
+
+.button-alt:hover svg path, .button-work:hover svg path {
+  fill: #3829b2 !important;
+}
 
 @media screen and (max-width: 600px) {
   .button {
@@ -730,7 +739,7 @@ bottom: inherit;
   display: block;
   border-style: solid;
   border-width: 0 16px 16px 16px;
-  border-color: transparent transparent #fff;
+  border-color: transparent transparent #fbe9fc;
   margin-top: -15px;
   position:absolute;
   left: 45%;
@@ -747,7 +756,7 @@ bottom: inherit;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
-	background: #ccc;
+	background: #fbe9fc;
 	border-radius: 0;
 	transition: .3s ease-out background, .3s ease-out transform;
 }
@@ -798,11 +807,12 @@ bottom: inherit;
 	display: block;
 	content: '\0276f';
 	font-size: 2.5em;
-	color: #503bff;
+  color: #503bff;
 	position: absolute;
-	bottom: -50px;
-	right: 10px;
-	margin-top: -.5em;
+	bottom: -70px;
+  height: 70px;
+	right: 0;
+  width: 50px;
 }
 
 .modalSlide .slideshow .slideshow-item label.previous:hover, .modalSlide .slideshow .slideshow-item label.next:hover {
@@ -816,7 +826,7 @@ bottom: inherit;
 
 .slideshow .slideshow-item label.previous:after {
 	right: auto;
-	left: 10px;
+	left: 0;
   -webkit-transform: scaleX(-1);
 	   -moz-transform: scaleX(-1);
 	        transform: scaleX(-1);	
@@ -829,7 +839,7 @@ bottom: inherit;
 
 .slideshow input[type="radio"]:checked + .slideshow-item {opacity: 1;}
 
-.slideshow input[type="radio"]:hover {cursor: pointer; background: #aaa;}
+.slideshow input[type="radio"]:hover {cursor: pointer; background: #503bff;}
 
 @media screen and (max-width: 600px) {
   .slideshow-item {width: 100%;}
