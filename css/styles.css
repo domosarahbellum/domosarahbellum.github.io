@@ -833,7 +833,6 @@ bottom: inherit;
   .slideshow {width: 50% !important;}
   
   .slideshow input[type="radio"] {
-    margin: 0 auto;
     left: 50%;
     right: 50%;
   }
