@@ -111,12 +111,14 @@ h5 {
 
 a {
   color: #503bff;
+  fill: #503bff;
   text-decoration: underline;
   text-decoration-style: dotted;
 }
 
 a:hover {
   color: #3829b2;
+   fill: #3829b2;
   text-decoration-style: solid;
   cursor: pointer;
 }
